@@ -78,17 +78,29 @@ WSGI_APPLICATION = 'ChampionshipsDjangoApp.wsgi.application'
 #    'default': {
 #        'ENGINE': 'django.db.backends.sqlite3',
 #        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#    }
+#   }
 #}
 
 DATABASES = {
     'default': {
-    'ENGINE':   'django.db.backends.oracle',
-    'NAME':     '192.168.1.50/cdb1',
-    'USER':     'kztest',
-    'PASSWORD': 'kztest',
-  }
+        'ENGINE': 'django.db.backends.mysql', 
+        'NAME': 'jaczaw$kz',
+        'USER': 'jaczaw',
+        'PASSWORD': 'kz2018',
+        'HOST': 'jaczaw.mysql.pythonanywhere-services.com',   # Or an IP Address that your DB is hosted on
+        'PORT': '3306',
+    }
 }
+
+
+#DATABASES = {
+#    'default': {
+#    'ENGINE':   'django.db.backends.oracle',
+#    'NAME':     '192.168.1.50/cdb1',
+#    'USER':     'kztest',
+#    'PASSWORD': 'kztest',
+#  }
+#}
 
 
 # Password validation
